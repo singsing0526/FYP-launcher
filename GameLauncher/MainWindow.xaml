@@ -1,0 +1,18 @@
+﻿<Window x:Class="GameLauncher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameLauncher"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        ContentRendered="Window_ContentRendered"
+        Title="Launcher" Height="576" Width="1080">
+    <Grid>
+        <Image Stretch="UniformToFill" Source="images/bg.jpg"/>
+        <TextBlock Name="VersionText" VerticalAlignment="Bottom" HorizontalAlignment="Right" FontSize="20" Foreground="White" Margin="0, 0, 5, 0"/>
+        <WebBrowser HorizontalAlignment="Center" VerticalAlignment="Center" Width="760" Height="380" Margin="0,0,0,40" Initialized="WebBrowser_Initialized"/>
+        <Button Name="PlayButton" Content="Checking For Updates" Click="PlayButton_Click" Height="40" FontSize="28" FontWeight="Bold" Foreground="#edbd2b" Margin="450, 0, 0,20" VerticalAlignment="Bottom" HorizontalAlignment="Center" MinWidth="150" Background="#070e1a" Padding="10,1,10,1"/>
+        <Button Name="WebSite" Content="Visit To Our Website" Click="Website_Click" Height="40" FontSize="26" FontWeight="Bold" Foreground="#edbd2b" Margin="160,480,0,15"  HorizontalAlignment="Left" MinWidth="150" Background="#070e1a" Padding="10,1,10,1"/>
+    </Grid>
+</Window>
